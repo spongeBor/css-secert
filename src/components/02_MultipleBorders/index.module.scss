@@ -1,0 +1,15 @@
+.container {
+  background: yellowgreen;
+  //1
+  // box-shadow: 0 0 0 10px #655, 
+  //   0 0 0 15px deeppink,
+  //   0 2px 5px 15px rgba(0,0,0,.6);
+
+  //2
+  border: 10px solid #655;
+  outline: 5px dashed deeppink;
+  outline-offset: -12px;
+
+  //3 outline 会贴合圆角
+  border-radius: 20px;
+}

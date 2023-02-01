@@ -1,0 +1,11 @@
+.container {
+  background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+  // 1
+  // background-position: right 20px bottom 10px;
+  // 2 background-origin 可以更改以哪个盒子为准
+  // padding: 10px;
+  // background-position: right bottom ;
+  // background-origin: content-box;
+  // 3 
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
