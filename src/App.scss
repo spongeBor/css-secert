@@ -1,0 +1,10 @@
+.app {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(224, 178, 126);
+  div {
+    height: 200px;
+    width: 200px;
+  }
+}

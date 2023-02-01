@@ -17,10 +17,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "commit": "cz",
+    "commit:amend": "git commit --amend --no-edit"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.0.0",
+    "commitizen": "^4.3.0",
+    "sass": "^1.58.0",
+    "typescript-plugin-css-modules": "^4.1.1"
   }
 }
