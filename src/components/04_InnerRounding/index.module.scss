@@ -1,0 +1,19 @@
+.something-meaningful {
+  background: #655;
+  padding: .8em;
+  height: auto !important;
+  div {
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+  }
+}
+.only {
+  // box-sizing: border-box;
+  height: auto !important;
+  background: tan;
+  border-radius: .8em;
+  padding: 1em;
+  box-shadow: 0 0 0 .6em #655;
+  outline: .6em solid #655; // 原来不贴圆角，现在贴圆角，所以不能实现外方内圆
+}

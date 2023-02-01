@@ -1,0 +1,63 @@
+.default {
+  // background: linear-gradient(#fb3, #58a);
+  // background: linear-gradient(#fb3 20% , #58a 80%)
+  background: linear-gradient(#fb3 50%, #58a 50%)
+}
+.horizontal {
+  // 1
+  // background: linear-gradient(#fb3 50%, #58a 0);
+
+  // 2
+  // background: linear-gradient(#fb3 30%, #58a 0); // 不等距条纹
+  // background-size: 100% 30px;
+
+  //3
+  background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66%, yellowgreen 0);
+  background-size: 100% 45px;
+}
+.vertical {
+  background: linear-gradient(to right, /*或90deg*/#fb3 50%, #58a 0);
+  background-size: 30px 100%;
+}
+.diagonal {
+  // 1 并不是斜向条纹
+  // background: linear-gradient(45deg, #fb3 50%, #58a 0);
+  // background-size: 30px 30px;
+
+  // 2 无缝需要四个条纹
+  // background: linear-gradient(45deg, 
+  //  #fb3 25%, #58a 0, #58a 50%,
+  //  #fb3 0, #fb3 75%, #58a 0);
+  // // background-size: 30px 30px; // 太细
+  // background-size: 42.426406871px 42.426406871px; // 45度宽度这原宽度的根号2倍
+
+  // 3 用repeating-linear-gradient
+  // background: repeating-linear-gradient(45deg,
+  //   #fb3, #fb3 15px, #58a 0, #58a 30px);
+  
+  // 4
+  background: repeating-linear-gradient(45deg,
+  #fb3, #fb3 25%, #58a 0, #58a 50%);
+  background-size: 42.426406871px 42.426406871px;
+}
+.diagonalSixth {
+  // 1 渐变的条纹
+  //  background: repeating-linear-gradient(60deg, #fb3, #58a 30px);
+  
+  // 2 
+  background: repeating-linear-gradient(60deg,
+    #fb3, #fb3 15px, #58a 0, #58a 30px);
+}
+.subtle {
+  // 1 同色系 改颜色需要改4处
+  // background: repeating-linear-gradient(30deg,
+  //   #79b, #79b 15px, #58a 0, #58a 30px);
+
+  // 2 同色系 改颜色需要改1处
+  background: #58a;
+  background-image: repeating-linear-gradient(30deg,
+    hsla(0, 0%, 100%, .1), 
+    hsla(0, 0%, 100%, .1) 15px,
+    transparent 0, transparent 30px);
+
+}
