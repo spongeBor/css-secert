@@ -3,9 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(224, 178, 126);
+  background-color: rgb(228, 207, 182);
   >div {
     height: 200px;
     width: 200px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
 }

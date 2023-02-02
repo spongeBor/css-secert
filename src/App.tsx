@@ -5,6 +5,7 @@ import MultipleBorders from './components/02_MultipleBorders';
 import ExtendedBgPosition from './components/03_ExtendedBgPosition';
 import InnerRounding from './components/04_InnerRounding';
 import Stripes from './components/05_Stripes';
+import ComplexBg from './components/06_ComplexBg';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
       <Stripes type='diagonal'/>
       <Stripes type='diagonal_60'/>
       <Stripes type='subtle'/>
+      <ComplexBg type='tablecloth'/>
+      <ComplexBg type='mesh'/>
+      <ComplexBg type='blueprint'/>
+      <ComplexBg type='polka'/>
+      <ComplexBg type='checkerboard'/>
     </div>
   );
 }
