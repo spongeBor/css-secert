@@ -6,6 +6,8 @@ import ExtendedBgPosition from './components/03_ExtendedBgPosition';
 import InnerRounding from './components/04_InnerRounding';
 import Stripes from './components/05_Stripes';
 import ComplexBg from './components/06_ComplexBg';
+import FakeRandomBg from './components/07_FakeRandomBg';
+import ContinuousImageBorder from './components/08_ContinuousImageBorder';
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
       <ComplexBg type='blueprint'/>
       <ComplexBg type='polka'/>
       <ComplexBg type='checkerboard'/>
+      <FakeRandomBg/>
+      <ContinuousImageBorder />
+      <ContinuousImageBorder type='vintage_envelope'/>
+      <ContinuousImageBorder type='marching_ants'/>
     </div>
   );
 }

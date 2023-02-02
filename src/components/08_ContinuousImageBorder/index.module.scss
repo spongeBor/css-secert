@@ -1,0 +1,41 @@
+.default {
+  box-sizing: border-box;
+  padding: 1em;
+  border: 1em solid transparent;
+  // background: linear-gradient(white, white), url(http://csssecrets.io/images/stone-art.jpg);
+  // background-size: cover;
+  // background-clip: padding-box, border-box;
+  // background-origin: border-box;
+  // 简写
+
+  background: linear-gradient(white, white) padding-box,
+  url(http://csssecrets.io/images/stone-art.jpg) border-box 0 / cover;
+}
+.vintageEnvelope{
+  box-sizing: border-box;
+  padding: 1em;
+  // 1
+	// border: 1em solid transparent;
+	// background: linear-gradient(white, white) padding-box,
+	//             repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, 
+	//               #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+  // 2
+  // border-image-slice 和border-width 要相互匹配
+  // border-image-slice 不支持em单位
+  // 条纹宽度要在 色标中定义好
+  border: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+}
+
+.marchingAnts {
+  box-sizing: border-box;
+  @keyframes ants { to { background-position: 100% 100% } }
+  padding: 1em;
+	border: 1px solid transparent;
+	background: linear-gradient(white, white) padding-box,
+	            repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+	animation: ants 12s linear infinite;
+	
+}
