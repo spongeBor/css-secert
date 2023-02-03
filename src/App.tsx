@@ -8,6 +8,7 @@ import Stripes from './components/05_Stripes';
 import ComplexBg from './components/06_ComplexBg';
 import FakeRandomBg from './components/07_FakeRandomBg';
 import ContinuousImageBorder from './components/08_ContinuousImageBorder';
+import Ellipse from './components/09_Ellipse';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
       <ContinuousImageBorder />
       <ContinuousImageBorder type='vintage_envelope'/>
       <ContinuousImageBorder type='marching_ants'/>
+      <Ellipse/>
+      <Ellipse type='half'/>
+      <Ellipse type='quarter'/>
     </div>
   );
 }

@@ -1,0 +1,34 @@
+.container {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .default {
+    background: #fb3;
+    // 1
+    // height: 150px;
+    // width: 150px;
+    // border-radius: 75px;
+  
+    // 2
+    width: 150px; 
+    height: 75px;
+    border-radius: 100px / 75px;
+    border-radius: 50% / 50%;
+    border-radius: 50%;
+  }
+  .half {
+    background: #fb3;
+    width: 150px; 
+    height: 75px;
+    border-radius: 50% / 100% 100% 0 0;
+    // border-radius: 100% 0 0 100% / 50%;
+  }
+  .quarter {
+    background: #fb3;
+    width: 150px; 
+    height: 75px;
+    border-radius: 100% 0 0 0;
+  }
+  
+}
