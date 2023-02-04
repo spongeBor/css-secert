@@ -1,0 +1,39 @@
+.container {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0; // 给一个比最外层高的值 就行
+  .default {
+    // background: #fb3;
+    text-align: center;
+    line-height: 75px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+
+    height: 75px;
+    width: 100px;
+    // transform: skewX(-45deg); // 内部文字也发生了倾斜
+
+    // 1 对内容应用的一次反向的skew
+    // >div {
+    //   transform: skewX(45deg)
+    // }
+    // 2 伪元素
+    position: relative;
+    // z-index: -1000; 子元素永远父元素高，设置无效
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: #58a;
+      transform: skewX(-45deg);
+    }
+  }
+  
+}
