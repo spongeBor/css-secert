@@ -1,0 +1,57 @@
+.container {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .gradient {
+    width: 150px;
+    height: 150px;
+    // 1
+    // background: #58a; // 用作回退机制
+    // background: linear-gradient(-45deg, transparent 15px, #58a 0)
+
+    // 2
+    background: #58a;
+    background:
+      linear-gradient(135deg, transparent 15px, #58a 0) top left,
+      linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+      linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+      linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+   
+  }
+  .scoopCorners {
+    width: 150px;
+    height: 150px;
+    background: #58a;
+    background:
+      radial-gradient(circle at top left, transparent 15px, #58a 0) top left,
+      radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+      radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
+      radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .beveledCorners {
+    width: 100px;
+    height: 100px;
+    border: 21px solid transparent;
+    border-image: 1 url('data:image/svg+xml,\
+                          <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%2358a">\
+                          <polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2" />\
+                          </svg>');
+    background: #58a;
+    background-clip: padding-box;
+  }
+  .clip {
+    width: 150px;
+    height: 150px;
+    background: #58a;
+    clip-path:
+	 		polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px),
+	 		calc(100% - 20px) 100%,
+	 		20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
+}

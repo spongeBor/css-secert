@@ -11,6 +11,7 @@ import ContinuousImageBorder from './components/08_ContinuousImageBorder';
 import Ellipse from './components/09_Ellipse';
 import Parallelograms from './components/10_Parallelograms';
 import Diamond from './components/11_Diamond';
+import Corners from './components/12_Corners';
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
       <Parallelograms/>
       <Diamond type='images'/>
       <Diamond type='clip'/>
+      <Corners type='gradient'/>
+      <Corners type='scoop-corners'/>
+      <Corners type='beveled-corners'/>
+      <Corners type='clip'/>
     </div>
   );
 }
