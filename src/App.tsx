@@ -10,6 +10,7 @@ import FakeRandomBg from './components/07_FakeRandomBg';
 import ContinuousImageBorder from './components/08_ContinuousImageBorder';
 import Ellipse from './components/09_Ellipse';
 import Parallelograms from './components/10_Parallelograms';
+import Diamond from './components/11_Diamond';
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
       <Ellipse type='half'/>
       <Ellipse type='quarter'/>
       <Parallelograms/>
+      <Diamond type='images'/>
+      <Diamond type='clip'/>
     </div>
   );
 }
