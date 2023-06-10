@@ -39,7 +39,7 @@
       radial-gradient($accent $dot, transparent 0),
       radial-gradient($accent $dot, transparent 0);
     background-size: $size $size;
-    background-position: 0 0, $size/2 $size/2;
+    background-position: 0 0, calc($size / 2) calc($size / 2);
   }
   @include polka(30px, 30%, #655, tan);
 }
